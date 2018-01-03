@@ -1,0 +1,28 @@
+.header {
+    background-color: #2c323c;
+    background-image: url(/4de356f…/00972/assets/images/geometry.svg);
+    background-repeat: repeat;
+    color: #fff;
+    min-height: 400px;
+    padding: 180px 20px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
