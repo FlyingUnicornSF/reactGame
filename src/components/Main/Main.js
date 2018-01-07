@@ -1,21 +1,25 @@
 // import React from "react";
 import React, { Component } from "react";
 import "./Main.css";
-import friends from "./friends.json";
-import FriendCard from "./FriendCard/FriendCard";
+import Friends from "../friends.json";
+import FriendCard from "../FriendCard/FriendCard";
 
+// RecipeList renders a bootstrap list item
+//export const RecipeList = props => <ul className="list-group">{props.children}</ul>;
 
 class Main extends Component {
 
    state = {
-    friends
+    Friend: [],
+    id: '',
+    image: ''
   };
 
   removeFriend = id => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
+    const Friend = this.state.Friends.filter(friend => Friend.id !== id);
     // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    this.setState({ Friends });
   };
 
     render() {
@@ -25,7 +29,7 @@ class Main extends Component {
               <FriendCard
                 removeFriend={this.removeFriend}
                 id={friend.id}
-                key={friend.id}
+                name={friend.name}
                 image={friend.image}
               />
             ))}
